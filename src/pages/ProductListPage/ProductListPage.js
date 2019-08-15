@@ -4,7 +4,7 @@ import ProductList from '../../components/ProductList/ProductList';
 import ProductItem from '../../components/ProductItem/ProductItem';
 import callApi from '../../utils/apiCaller';
 import { Link } from 'react-router-dom';
-import ActionCreators from '../../actions/ActionCreators';
+import { fetchProductsRequest } from '../../actions/ActionCreators';
 
 class ProductListPage extends React.Component {
     constructor(props) {
@@ -41,7 +41,7 @@ class ProductListPage extends React.Component {
                         products
                     })
                 }
-                
+
             })
     }
     render() {
@@ -68,7 +68,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch, props) => {
     return {
         fetchAllProducts: () => {
-            dispatch(ActionCreators.fetchProductsRequest());
+            dispatch(fetchProductsRequest());
         }
     }
 }
