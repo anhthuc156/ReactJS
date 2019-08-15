@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Iphone X",
+      "price": "312312321",
+      "status": true,
+      "id": 1
+    },
+    {
+      "name": "Samsung Go 7",
+      "price": "777",
+      "status": "",
+      "id": 2
+    }
+  ]
+}
